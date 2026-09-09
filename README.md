@@ -17,6 +17,7 @@ A self-contained Streamlit trading research terminal rebuilt from the capabiliti
 - Market timing / pre-post session diagnostics
 - Portfolio risk dashboard
 - Single-stock "Command Center" report
+- **Signal Outcome Tracker** to record scanner candidates and measure 1D/3D/5D/10D returns, MFE/MAE, TP1/SL outcomes and score-bucket quality
 
 ## Run
 
@@ -29,3 +30,7 @@ streamlit run app.py
 ```
 
 The app is research software, not financial advice. Market data availability and Yahoo Finance coverage can change.
+
+## Development direction
+
+SWAF is being developed as a feedback-driven research terminal: **market discovery → candidate capture → outcome tracking → signal calibration → adaptive ranking**. The Outcome Tracker stores local observations under `.swaf_data/` (ignored by Git) so experimental results are not committed into the repository.
